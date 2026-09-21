@@ -14,39 +14,4 @@ namespace oop
         }
         
     }
-
-
-    internal class Circle
-    {
-        int _radius;
-        private int _test;
-
-        public int test
-        {
-            get { return _test; }
-            set
-            {
-                _test = value;
-            }
-        }
-
-
-        public Circle(int radie)
-        {
-            _radius = radie;
-        }
-        
-        public double GetArea()
-        {
-            double area;
-            return area = _radius * _radius * Math.PI;
-
-        }
-        public double GetOmkrets()
-        {
-            double omkrets;
-            return omkrets = _radius * 2 * Math.PI;
-        }
-
-    }
 }
