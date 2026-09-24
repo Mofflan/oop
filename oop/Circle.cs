@@ -1,38 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Formats.Asn1;
 using System.Text;
 
 namespace oop
 {
     internal class Circle
     {
-        int _radius;
-
-        public int radius
-        {
-            get { return _radius; }
-            set
-            {
-                _radius = value;
-            }
-        }
-
+        //skapar property Radius
+        public int Radius { get; set; }
+        private double area;
+        private double omkrets;
 
         public Circle(int radie)
         {
-            radius = radie;
+            Radius = radie;
         }
 
         public double GetArea()
         {
-            double area;
-            return area = radius * radius * Math.PI;
+            return area = Radius * Radius * Math.PI;
 
         }
         public double GetOmkrets()
         {
-            double omkrets;
-            return omkrets = radius * 2 * Math.PI;
+            return omkrets = Radius * 2 * Math.PI;
         }
 
     }
